@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuManager: MonoBehaviour
 {
@@ -33,6 +34,7 @@ public class MainMenuManager: MonoBehaviour
     {
         //Code to verify login credentials
         //if doesnt match or doesnt exist error
+        SceneManager.LoadScene("Game");
     }
 
     public void Options()

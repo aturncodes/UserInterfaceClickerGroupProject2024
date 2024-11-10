@@ -38,26 +38,27 @@ public class ScoreKeeper : MonoBehaviour
     {
         
     }
-
+    //Decreasing player score/currency
     public void DecreaseScore(int points)
     {
         score -= points;
         scoreText.text = "Score: " + score;
     }
-
+    //Increasing player score/currency
     public void IncreaseScore(int points)
     {
         score += points;
         scoreText.text = "Score: " + score;
     }
     
-    
+    //Set score/currency to a value
     public void SetScore(int score)
     {
         this.score = score;
         scoreText.text = "Score: " + score;
     }
 
+    //Retrieve score/currency
     public int GetScore()
     {
         return score;

@@ -12,14 +12,11 @@ public class Generator : MonoBehaviour
     [SerializeField] private TextMeshProUGUI text;
     [SerializeField] private Button button;
     
-    //private static ScoreKeeper scoreKeeper;
-    
     void Start()
     {
         text.text = waitTime.ToString();
     }
-
-
+    
     void Update()
     {
         
@@ -30,9 +27,10 @@ public class Generator : MonoBehaviour
         StartCoroutine(TimerRoutine());
     }
     
-    //TODO: Disallow clicking during cooldown
     IEnumerator TimerRoutine()
     {
+        //disable clicking
+        button.interactable = false;
         float timer = 0; 
         while (timer <= waitTime)
         {
@@ -51,10 +49,15 @@ public class Generator : MonoBehaviour
         //Update Score
         ScoreKeeper.Singleton.IncreaseScore(points);
         
-        // reset timer and slider value
+        //Delay clear speed
+        yield return new WaitForSeconds(0.05f);
+        
+        // reset timer and slider value and enable clicking
         timer = 0;
         slider.value = 0;
-        //remove
+        button.interactable = true;
+        
+        //TODO: remove testing
         text.text = waitTime.ToString();
     }
 }

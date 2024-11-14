@@ -5,6 +5,7 @@ public class MainMenuManager: MonoBehaviour
 {
     [SerializeField] private Canvas mainMenu;
     [SerializeField] private Canvas createAccount;
+    [SerializeField] public Object sceneToLoad;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,7 +35,7 @@ public class MainMenuManager: MonoBehaviour
     {
         //Code to verify login credentials
         //if doesnt match or doesnt exist error
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene(sceneToLoad.name);
     }
 
     public void Options()

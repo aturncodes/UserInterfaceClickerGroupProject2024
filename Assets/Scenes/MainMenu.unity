@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 1643346065}
   createAccount: {fileID: 208225634}
+  sceneToLoad: {fileID: 102900000, guid: d74a477a10d44f14999ac51b716e562f, type: 3}
 --- !u!4 &26751076
 Transform:
   m_ObjectHideFlags: 0

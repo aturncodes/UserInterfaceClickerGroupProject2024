@@ -12,16 +12,12 @@ public class MainMenuManager: MonoBehaviour
     [SerializeField] private TMP_InputField password_mainMenu;
     [SerializeField] private TextMeshProUGUI errorMsg_mainMenu;
     [SerializeField] private UserInfo userInfo;
-    
-    [Header("CreateAccount UI")]
-    [SerializeField] private Canvas createAccount;
-<<<<<<< Updated upstream
-    [SerializeField] public Object sceneToLoad;
-=======
+
+    [Header("CreateAccount UI")] [SerializeField]
+    private Canvas createAccount;
     [SerializeField] private TMP_InputField username_createAccount;
     [SerializeField] private TMP_InputField password_createAccount;
     [SerializeField] private TextMeshProUGUI errorMsg_createAccount;
->>>>>>> Stashed changes
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -57,9 +53,6 @@ public class MainMenuManager: MonoBehaviour
     {
         //Code to verify login credentials
         //if doesnt match or doesnt exist error
-<<<<<<< Updated upstream
-        SceneManager.LoadScene(sceneToLoad.name);
-=======
 
         if (username_mainMenu.text.Equals("") || password_mainMenu.text.Equals(""))
         {
@@ -74,7 +67,7 @@ public class MainMenuManager: MonoBehaviour
         }
         
         SceneManager.LoadScene("Game");
->>>>>>> Stashed changes
+
     }
 
     public void SignUp()

@@ -154,13 +154,9 @@ MonoBehaviour:
   errorMsg_mainMenu: {fileID: 1228630833}
   userInfo: {fileID: 11400000, guid: 4d370fc9e698e9d49b6f985280aff958, type: 2}
   createAccount: {fileID: 208225634}
-<<<<<<< Updated upstream
-  sceneToLoad: {fileID: 102900000, guid: d74a477a10d44f14999ac51b716e562f, type: 3}
-=======
   username_createAccount: {fileID: 781380528}
   password_createAccount: {fileID: 890301420}
   errorMsg_createAccount: {fileID: 350085668}
->>>>>>> Stashed changes
 --- !u!4 &26751076
 Transform:
   m_ObjectHideFlags: 0

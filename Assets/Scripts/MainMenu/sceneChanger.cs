@@ -3,12 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class sceneChanger : MonoBehaviour
 {
-    [SerializeField] private Canvas sidebarMenu;
-    [SerializeField] private Object upgrades;
-    [SerializeField] private Object managers;
-    [SerializeField] private Object settings;
-    [SerializeField] private Object acheivements;
-    [SerializeField] private Object generators;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,19 +17,19 @@ public class sceneChanger : MonoBehaviour
     }
     public void upgradeChange(){
         Debug.Log("Upgrade Button Clicked");
-        SceneManager.LoadScene(upgrades.name);
+        SceneManager.LoadScene("Upgrades");
     }
     public void managerChange(){
-        SceneManager.LoadScene(managers.name);
+        SceneManager.LoadScene("Managers");
     }
     public void settingsChange(){
-        SceneManager.LoadScene(settings.name);
+        SceneManager.LoadScene("Settings");
     }
     public void acheivementsChange(){
-        SceneManager.LoadScene(acheivements.name);
+        SceneManager.LoadScene("Achievements");
     }
     public void generatorsChange(){
-        SceneManager.LoadScene(generators.name);
+        SceneManager.LoadScene("Generators");
     }
 
 }

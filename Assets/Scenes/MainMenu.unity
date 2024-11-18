@@ -212,7 +212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 36, y: 211}
+  m_AnchoredPosition: {x: 0, y: 266}
   m_SizeDelta: {x: 617.23, y: 142.87}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &285491107
@@ -524,7 +524,7 @@ PrefabInstance:
       objectReference: {fileID: 5047663043822192049, guid: c970873268279894a8bada07d062c3ef, type: 2}
     - target: {fileID: 7074302810542888979, guid: 44df5c52467085844a94b48e3647e9dd, type: 3}
       propertyPath: m_text
-      value: "asdasda\u200B"
+      value: "\u200B"
       objectReference: {fileID: 0}
     - target: {fileID: 7074302810542888979, guid: 44df5c52467085844a94b48e3647e9dd, type: 3}
       propertyPath: m_fontAsset
@@ -697,7 +697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7933266007765076330, guid: c17c19b2acab1aa49a18f71ff532128f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 69.83
+      value: 69.83002
       objectReference: {fileID: 0}
     - target: {fileID: 7933266007765076330, guid: c17c19b2acab1aa49a18f71ff532128f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -729,11 +729,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7933266007765076330, guid: c17c19b2acab1aa49a18f71ff532128f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.8999953
+      value: 0.0000014305115
       objectReference: {fileID: 0}
     - target: {fileID: 7933266007765076330, guid: c17c19b2acab1aa49a18f71ff532128f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -339
+      value: -321
       objectReference: {fileID: 0}
     - target: {fileID: 7933266007765076330, guid: c17c19b2acab1aa49a18f71ff532128f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1261,7 +1261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7933266007765076330, guid: c17c19b2acab1aa49a18f71ff532128f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 69.83
+      value: 69.83002
       objectReference: {fileID: 0}
     - target: {fileID: 7933266007765076330, guid: c17c19b2acab1aa49a18f71ff532128f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1293,11 +1293,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7933266007765076330, guid: c17c19b2acab1aa49a18f71ff532128f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.8999953
+      value: 0.0000014305115
       objectReference: {fileID: 0}
     - target: {fileID: 7933266007765076330, guid: c17c19b2acab1aa49a18f71ff532128f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -249
+      value: -232
       objectReference: {fileID: 0}
     - target: {fileID: 7933266007765076330, guid: c17c19b2acab1aa49a18f71ff532128f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1386,7 +1386,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7933266007765076330, guid: c17c19b2acab1aa49a18f71ff532128f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 69.83
+      value: 69.83002
       objectReference: {fileID: 0}
     - target: {fileID: 7933266007765076330, guid: c17c19b2acab1aa49a18f71ff532128f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1418,11 +1418,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7933266007765076330, guid: c17c19b2acab1aa49a18f71ff532128f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.8999953
+      value: 0.0000014305115
       objectReference: {fileID: 0}
     - target: {fileID: 7933266007765076330, guid: c17c19b2acab1aa49a18f71ff532128f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -151
+      value: -144
       objectReference: {fileID: 0}
     - target: {fileID: 7933266007765076330, guid: c17c19b2acab1aa49a18f71ff532128f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1479,7 +1479,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7074302810542888979, guid: 44df5c52467085844a94b48e3647e9dd, type: 3}
       propertyPath: m_text
-      value: "asdasd\u200B"
+      value: "\u200B"
       objectReference: {fileID: 0}
     - target: {fileID: 7074302810542888979, guid: 44df5c52467085844a94b48e3647e9dd, type: 3}
       propertyPath: m_fontAsset

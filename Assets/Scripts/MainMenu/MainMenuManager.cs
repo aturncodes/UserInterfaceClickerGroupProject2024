@@ -13,7 +13,6 @@ public class MainMenuManager: MonoBehaviour
     [SerializeField] private TMP_InputField password_mainMenu;
     [SerializeField] private TextMeshProUGUI errorMsg_mainMenu;
     [SerializeField] private UserInfo userInfo;
-    [SerializeField] private Object createAccount;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -29,7 +28,7 @@ public class MainMenuManager: MonoBehaviour
 
     public void CreateAccount()
     {
-        SceneManager.LoadScene(createAccount.name);
+        SceneManager.LoadScene("CreateAccount");
     }
     public void Quit()
     {

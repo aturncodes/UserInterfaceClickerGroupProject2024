@@ -1,4 +1,4 @@
-# UI CLicker Project (Name in progress)
+# UI Clicker Project (Name in progress)
 ## UI Project
 
 ###Description

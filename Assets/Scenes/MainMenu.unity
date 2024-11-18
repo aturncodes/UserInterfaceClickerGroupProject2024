@@ -153,7 +153,6 @@ MonoBehaviour:
   password_mainMenu: {fileID: 1164353436}
   errorMsg_mainMenu: {fileID: 1228630833}
   userInfo: {fileID: 11400000, guid: 4d370fc9e698e9d49b6f985280aff958, type: 2}
-  createAccount: {fileID: 102900000, guid: b76ae31251c844347ad7edc42235210e, type: 3}
 --- !u!4 &26751076
 Transform:
   m_ObjectHideFlags: 0
@@ -502,6 +501,10 @@ PrefabInstance:
     - target: {fileID: 2069295719998210117, guid: 44df5c52467085844a94b48e3647e9dd, type: 3}
       propertyPath: m_Name
       value: PassInput
+      objectReference: {fileID: 0}
+    - target: {fileID: 5336705771702471382, guid: 44df5c52467085844a94b48e3647e9dd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6852366305464804653, guid: 44df5c52467085844a94b48e3647e9dd, type: 3}
       propertyPath: m_text

@@ -3865,7 +3865,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 883849558800433796, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_text
-      value: "asd\u200B"
+      value: "\u200B"
       objectReference: {fileID: 0}
     - target: {fileID: 883849558800433796, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_fontSize
@@ -3905,7 +3905,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2623101655163408449, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3562512541648076730, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_Enabled

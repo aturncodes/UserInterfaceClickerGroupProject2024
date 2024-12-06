@@ -6,11 +6,9 @@ public class ScoreKeeper : MonoBehaviour
 {
 
     [SerializeField] private TextMeshProUGUI scoreText;
-
-    [SerializeField] private int score;
-    
+    private int score;
     public static ScoreKeeper Singleton;
-
+    
     private void Awake()
     {
         //Create only one instance
@@ -23,39 +21,28 @@ public class ScoreKeeper : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-    }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
         //Set equal to player score on login once player settings are set up
         score = 0;
         scoreText.text = "Score: " + score;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     //Decreasing player score/currency
-    public void DecreaseScore(int points)
+    public void BuyItem(int cost)
     {
-        score -= points;
-        scoreText.text = "Score: " + score;
+        SetScore(score - cost);
     }
     //Increasing player score/currency
-    public void IncreaseScore(int points)
+    public void GeneratedPoints(int points)
     {
-        score += points;
-        scoreText.text = "Score: " + score;
+        SetScore(score + points);
     }
-    
-    //Set score/currency to a value
-    public void SetScore(int score)
+
+    public void SellItem(int marketPrice)
     {
-        this.score = score;
-        scoreText.text = "Score: " + score;
+        float sellBackPercentage = 0.4f;
+        int sellBackTotal = (int)Math.Round(sellBackPercentage * marketPrice);
+        SetScore(score + sellBackTotal);
     }
 
     //Retrieve score/currency
@@ -63,5 +50,27 @@ public class ScoreKeeper : MonoBehaviour
     {
         return score;
     }
+
+    public void Save(ref ScoreData saveScore)
+    {
+        saveScore.score = score;
+    }
+
+    public void Load(ScoreData saveScore)
+    {
+        SetScore(saveScore.score);
+    }
+
+    private void SetScore(int score)
+    {
+        this.score = score;
+        scoreText.text = "Score: " + score;
+    }
     
+}
+
+[System.Serializable]
+public class ScoreData
+{
+    public int score;
 }

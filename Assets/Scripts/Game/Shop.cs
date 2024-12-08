@@ -27,7 +27,7 @@ public class Shop : MonoBehaviour
         generatorGrid.gameObject.SetActive(false);
         managerGrid.gameObject.SetActive(true);
     }
-    public void BuyGenerator(GameObject itemPrefab)
+    public void Buy()
     { 
         /*int playerScore = ScoreKeeper.Singleton.GetScore();
 

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,45 +7,27 @@ public class Shop : MonoBehaviour
 {
     [SerializeField] private Button generatorButton;
     [SerializeField] private Button managerButton;
-    [SerializeField] private Button upgradeButton;
-    [SerializeField] private GameObject searchBar;
     
     //TODO: Switch GameObject type to Actual UI type
-    [SerializeField] private GameObject generators;
-    [SerializeField] private GameObject managers;
-    [SerializeField] private GameObject upgrades;
-
+    [SerializeField] private GameObject generatorGrid;
+    [SerializeField] private GameObject managerGrid;
+    
     [SerializeField] private GameObject testGenPrefab;
     [SerializeField] private GameObject testManPrefab;
 
     
     public void GeneratorSelect()
     {
-        generators.gameObject.SetActive(true);
-        managers.gameObject.SetActive(false);
-        upgrades.gameObject.SetActive(false);
+        generatorGrid.gameObject.SetActive(true);
+        managerGrid.gameObject.SetActive(false);
     }
     
     public void MangerSelect()
     {
-        generators.gameObject.SetActive(false);
-        managers.gameObject.SetActive(true);
-        upgrades.gameObject.SetActive(false);
+        generatorGrid.gameObject.SetActive(false);
+        managerGrid.gameObject.SetActive(true);
     }
-    
-    public void UpgradeSelect()
-    {
-        generators.gameObject.SetActive(false);
-        managers.gameObject.SetActive(false);
-        upgrades.gameObject.SetActive(true);
-    }
-    
-    public void AddToCart()
-    {
-        
-    }
-    
-    public void Buy()
+    public void BuyGenerator(GameObject itemPrefab)
     { 
         /*int playerScore = ScoreKeeper.Singleton.GetScore();
 

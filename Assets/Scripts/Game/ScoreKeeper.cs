@@ -24,7 +24,7 @@ public class ScoreKeeper : MonoBehaviour
 
         //Set equal to player score on login once player settings are set up
         score = 0;
-        scoreText.text = "Score: " + score;
+        scoreText.text = score.ToString();
     }
     
     //Decreasing player score/currency
@@ -64,7 +64,7 @@ public class ScoreKeeper : MonoBehaviour
     private void SetScore(int score)
     {
         this.score = score;
-        scoreText.text = "Score: " + score;
+        scoreText.text = score.ToString();
     }
     
 }

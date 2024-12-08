@@ -9,6 +9,7 @@ public class Generator : MonoBehaviour
 {
 
     [SerializeField] public string name;
+    [SerializeField] public int level;
     [SerializeField] public int slotId;
     [SerializeField] public int points;
     [SerializeField] public int marketPrice;

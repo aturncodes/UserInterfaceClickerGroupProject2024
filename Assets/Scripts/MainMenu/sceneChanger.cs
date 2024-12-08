@@ -29,7 +29,12 @@ public class sceneChanger : MonoBehaviour
         SceneManager.LoadScene("Achievements");
     }
     public void generatorsChange(){
-        SceneManager.LoadScene("Generators");
+        SceneManager.LoadScene("Game");
+    }
+
+    public void quitGame() {
+        Debug.Log("Quit button pressed");
+        Application.Quit();
     }
 
 }

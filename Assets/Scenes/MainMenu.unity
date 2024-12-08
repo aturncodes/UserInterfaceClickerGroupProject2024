@@ -228,7 +228,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '[CLICKER TITLE]'
+  m_text: Rich Wizard
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c970873268279894a8bada07d062c3ef, type: 2}
   m_sharedMaterial: {fileID: 5047663043822192049, guid: c970873268279894a8bada07d062c3ef, type: 2}

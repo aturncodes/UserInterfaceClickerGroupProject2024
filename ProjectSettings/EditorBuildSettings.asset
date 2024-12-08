@@ -11,9 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CreateAccount.unity
     guid: b76ae31251c844347ad7edc42235210e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Game.unity
-    guid: 1e5fc5a31df45fd4c8c3108cba18c8dc
+    guid: 0912b6907bf6f324bb50fe0b20442c02
   - enabled: 1
     path: Assets/Scenes/Generators.unity
     guid: d74a477a10d44f14999ac51b716e562f

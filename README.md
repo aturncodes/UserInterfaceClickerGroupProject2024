@@ -1,4 +1,4 @@
-# UI Clicker Project (Name in progress)
+# Rich Wizard
 ## UI Project
 
 ###Description
@@ -12,5 +12,5 @@ Clicker game developed for UI class
 - Enter account information and procceed to login screen
 - Login and enter game
 - Click on generators to obtain points 
-- Click on tabs to navigate to different menus('generators', 'achievements', 'upgrades', 'manager', and 'settings'
+- Click on tabs to navigate to different menus('generators', 'achievements', 'upgrades', 'manager', and 'settings')
 - Each tab has its own buttons for player to click and interact with

@@ -51,7 +51,7 @@ public class MainMenuManager: MonoBehaviour
             return;
         }
         
-        SceneManager.LoadScene("Generators");
+        SceneManager.LoadScene("Game");
 
     }
     public void Options()

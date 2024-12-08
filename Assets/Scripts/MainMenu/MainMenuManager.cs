@@ -7,23 +7,50 @@ using Object = UnityEngine.Object;
 
 public class MainMenuManager: MonoBehaviour
 {
-    [Header("MainMenu UI")]
-    [SerializeField] private Canvas mainMenu;
-    [SerializeField] private TMP_InputField username_mainMenu;
-    [SerializeField] private TMP_InputField password_mainMenu;
-    [SerializeField] private TextMeshProUGUI errorMsg_mainMenu;
-    [SerializeField] private UserInfo userInfo;
+    [SerializeField] private TMP_InputField username;
+    [SerializeField] private TMP_InputField password;
+    [SerializeField] private TextMeshProUGUI errorMsg;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Awake()
+    public void Login()
     {
-    
-    }
+        errorMsg.text = "";
+        if (username.text.Equals("") || password.text.Equals(""))
+        {
+            errorMsg.text = "Please fill required fields: ";
+            if (username.text.Equals(""))
+                errorMsg.text += "Username | ";
+            if(password.text.Equals(""))
+                errorMsg.text += "Password";
+            return;
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
+        if (!PlayerSystem.Singleton.LoginAttempt(username.text, password.text))
+        {
+            errorMsg.text = "Login Failed. The credentials you entered are incorrect.";
+            return;
+        }
         
+        Player player = PlayerSystem.Singleton.PlayerLookup(username.text, password.text);
+
+        if (player == null)
+        {
+            Debug.LogError("Player not found!");
+            return;
+        }
+            
+        PlayerSystem.Singleton.SetCurrentPlayer(player.playerId);
+
+        /*if (SaveSystem.Singleton.DoesGameSaveExist(player.playerId))
+        {
+            SaveSystem.Singleton.LoadGameData(player.playerId);
+            //TODO: loading animation/transition
+        }
+        else*/
+        {
+            GameManager.Singleton.NewGame();
+            //TODO: loading animation/transition
+        }
+
     }
 
     public void CreateAccount()
@@ -34,31 +61,10 @@ public class MainMenuManager: MonoBehaviour
     {
         Application.Quit();
     }
-    public void Login()
-    {
-        //Code to verify login credentials
-        //if doesnt match or doesnt exist error
-
-        if (username_mainMenu.text.Equals("") || password_mainMenu.text.Equals(""))
-        {
-            errorMsg_mainMenu.text = "Please fill required fields";
-            return;
-        }
-
-        if (!userInfo.VerifyUser(username_mainMenu.text, password_mainMenu.text))
-        {
-            errorMsg_mainMenu.text = "Username or password is incorrect";
-            return;
-        }
-        
-        SceneManager.LoadScene("Generators");
-
-    }
+    
     public void Options()
     {
         //Code to show settings canvas
     }
-    
-    
     
 }

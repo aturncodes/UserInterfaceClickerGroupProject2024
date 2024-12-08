@@ -20,9 +20,7 @@
         public Slot[] slots;
     }
 
-    [CreateAssetMenu(fileName = "GameManager", menuName = "ScriptableObjects/GameManager")]
-
-    public class GameManager : ScriptableObject
+    public class GameManager : MonoBehaviour
     {
         //Game Layout
         const int GENS_PER_COL = 4;
@@ -50,6 +48,7 @@
             }
 
             Singleton = this;
+            DontDestroyOnLoad(gameObject);
             
             prefabMapping = new Dictionary<GameObject, GameObject>();
             managerMapping = new Dictionary<GameObject, GameObject>();

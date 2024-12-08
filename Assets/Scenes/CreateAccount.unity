@@ -217,7 +217,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3562512541648076730, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3562512541648076730, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_fontAsset
@@ -325,7 +325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8851951024029908635, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_Text
-      value: 
+      value: p
       objectReference: {fileID: 0}
     - target: {fileID: 8851951024029908635, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_GlobalFontAsset
@@ -531,7 +531,6 @@ MonoBehaviour:
   password: {fileID: 1515151403}
   password2: {fileID: 1627773027}
   errorMsg: {fileID: 936523109}
-  userInfo: {fileID: 11400000, guid: 4d370fc9e698e9d49b6f985280aff958, type: 2}
 --- !u!1001 &120638218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -586,7 +585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3562512541648076730, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5702072054409593779, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_Pivot.x
@@ -682,7 +681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8851951024029908635, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_Text
-      value: 
+      value: u
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -873,7 +872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3562512541648076730, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3562512541648076730, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_fontAsset
@@ -981,7 +980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8851951024029908635, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_Text
-      value: 
+      value: p
       objectReference: {fileID: 0}
     - target: {fileID: 8851951024029908635, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_GlobalFontAsset
@@ -2727,7 +2726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3562512541648076730, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3562512541648076730, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_fontAsset
@@ -2839,7 +2838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8851951024029908635, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_Text
-      value: 
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 8987108248031937516, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_SizeDelta.x
@@ -3909,7 +3908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3562512541648076730, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5702072054409593779, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_Pivot.x
@@ -4009,7 +4008,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8851951024029908635, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_Text
-      value: 
+      value: test
       objectReference: {fileID: 0}
     - target: {fileID: 8987108248031937516, guid: 0ba0e7d24ada60b46bd530e7163b7f8a, type: 3}
       propertyPath: m_AnchoredPosition.y

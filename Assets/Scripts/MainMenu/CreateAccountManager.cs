@@ -1,3 +1,4 @@
+using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -14,20 +15,7 @@ public class CreateAccountManager : MonoBehaviour
     [SerializeField] private TMP_InputField password;
     [SerializeField] private TMP_InputField password2;
     [SerializeField] private TextMeshProUGUI errorMsg;
-    [SerializeField] private UserInfo userInfo;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    
     public void LogIn()
     {
         errorMsg.text = "";
@@ -47,7 +35,6 @@ public class CreateAccountManager : MonoBehaviour
             if (!password.text.Equals(password2.text))
             {
                 errorMsg.text += "\nPasswords do not match";
-                return;
             }
             return;
         }
@@ -58,7 +45,7 @@ public class CreateAccountManager : MonoBehaviour
             return;
         }
         
-        if (!userInfo.TryAddUser(username.text, password.text))
+        if (!PlayerSystem.Singleton.TryAddLogin(username.text, password.text))
         {
             errorMsg.text += "\nThis username is already taken";
             
@@ -70,10 +57,46 @@ public class CreateAccountManager : MonoBehaviour
             return;
             
         }
+        
+        Player player = PlayerSystem.Singleton.PlayerLookup(username.text, password.text);
 
-        SceneManager.LoadScene("MainMenu");
+        if (player != null)
+        {
+            Debug.LogError("Account taken!");
+            return;
+        }
+        
+        player = new Player()
+        {
+            playerId = 0,
+            name = this.name.text,
+            age = this.age.text,
+            username = this.username.text,
+            password = this.password.text,
+            //TODO: code for icon
+            //iconName = 
+            iconName = null,
+            //Settings, etc
+        };
+        PlayerSystem.Singleton.AddPlayer(player);
+            
+        PlayerSystem.Singleton.SetCurrentPlayer(player.playerId);
+
+        /*if (SaveSystem.Singleton.DoesGameSaveExist(player.playerId))
+        {
+            Debug.LogError("Save Exists!");
+        }
+        else
+        {
+            if (GameManager.Singleton == null)
+            {
+                Debug.LogError("Game manager is null");
+            }
+            GameManager.Singleton.NewGame();
+        }*/
+        GameManager.Singleton.NewGame();
     }
-
+    
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");

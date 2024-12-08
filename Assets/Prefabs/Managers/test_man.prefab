@@ -28,7 +28,7 @@ RectTransform:
   m_GameObject: {fileID: 106595964776612922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.32825, y: 0.32825, z: 0.32825}
+  m_LocalScale: {x: 0.41238046, y: 0.41238046, z: 0.41238046}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6736517375221144336, guid: 8e39a5ff665d4f447b300ed87bd53c3f, type: 3}
+  m_Sprite: {fileID: 3422849895820167655, guid: 89cbc5f89177dcd4a9f8d7cefafd9ddc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -88,5 +88,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82ff04e9dca907647934f5a68b53932a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  managerPrefab: {fileID: 0}
   generator: {fileID: 0}
+  level: 0

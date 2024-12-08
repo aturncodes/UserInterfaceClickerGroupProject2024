@@ -69,7 +69,7 @@ public class Shop : MonoBehaviour
         int playerScore = ScoreKeeper.Singleton.GetScore();
 
         //int marketPrice = testBuyPrefab.GetComponent<Generator>().marketPrice;
-        int marketPrice = 3;
+        int marketPrice = 5;
         if (marketPrice <= playerScore)
         {
             GameObject genObject = GameManager.Singleton.GetLockedGenerator();
@@ -92,7 +92,7 @@ public class Shop : MonoBehaviour
         
         int playerScore = ScoreKeeper.Singleton.GetScore();
         //int marketPrice = testBuyPrefab.GetComponent<Generator>().marketPrice;
-        int marketPrice = 3;
+        int marketPrice = 10;
         if (marketPrice <= playerScore)
         {
             GameObject genObject = GameManager.Singleton.GetOpenManagerGenerator();
